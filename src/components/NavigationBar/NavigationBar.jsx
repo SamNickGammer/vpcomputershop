@@ -1,9 +1,11 @@
 import React from 'react'
 import { LogoVP_BIG_Black } from "../../assets/index.js"
-import Nav_Account from './Nav_Account.jsx';
-import { FiShoppingCart } from "react-icons/fi";
+// import Nav_Account from './Nav_Account.jsx';
+// import { FiShoppingCart } from "react-icons/fi";
+import { useSelector } from 'react-redux'; 
 
 const NavigationBar = () => {
+    const state = useSelector((state) => state.screen);
     return (
         //Make Nav Little Blurry background
         <div className='nav'> 
@@ -14,7 +16,7 @@ const NavigationBar = () => {
                 <div className="nav__title_name">Computer Shop</div>
             </div>
             <div>
-                h
+               
             </div>
             {/* <div className='nav__option'>
                 <div className="nav__item">Store</div>
