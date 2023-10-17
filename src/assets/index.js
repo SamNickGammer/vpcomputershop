@@ -6,4 +6,7 @@ import LogoVP_BIG_Black from "./logos/LOGO_Big_Black.svg"
 
 import Random_User_Image from "./images/23.jpg"
 
-export { LogoVP_BIG, LogoVP_FullNameOld, LogoVP_Normal, LogoVP_Small, LogoVP_BIG_Black, Random_User_Image }
+import Laptop_Image_Slide from "./images/laptop.jpg"
+
+
+export { Laptop_Image_Slide, LogoVP_BIG, LogoVP_FullNameOld, LogoVP_Normal, LogoVP_Small, LogoVP_BIG_Black, Random_User_Image }

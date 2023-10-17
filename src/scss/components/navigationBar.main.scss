@@ -249,5 +249,29 @@
         height: calc(100vh - 51px);
         overflow-y: scroll;
         padding: 15px;
+
+        &_users{
+            @include flexCenter();
+            flex-direction: column;
+            border-bottom: 1px solid #0c0b0b;
+            padding-bottom: 5px;
+
+            &-name{
+                font-size: 20px;
+                font-weight: bold;
+            }
+            &-email{
+                font-weight: 200;
+            }
+        }
+
+        &_products{
+            padding-top: 5px;
+
+            .title{
+                font-size: 15px;
+                font-weight: bold;
+            }
+        }
     }
 }

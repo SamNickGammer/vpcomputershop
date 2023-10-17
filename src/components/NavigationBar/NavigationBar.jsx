@@ -27,7 +27,16 @@ const NavigationBar = () => {
                             <FiX style={{ height: "20px", width: "20px" }} />
                             <div className={clicked ? "drw__mobile drw__close" : "drw__mobile"} style={{ top: "50px", height: "calc(100vh - 50px)" }}>
                                 <div className='drw__container'>
-
+                                    <div className='drw__container_users'>
+                                        <div className='drw__container_users-name'>Welcome! Sam</div>
+                                        <div className='drw__container_users-email'>omprakash121samuni@gmail.com</div>
+                                    </div>
+                                    <div className='drw__container_products'>
+                                        <div className='title'>Products</div>
+                                    </div>
+                                    <div className='drw__container_products'>
+                                        <div>Hello Worlds</div>
+                                    </div>
                                 </div>
                             </div>
                         </>
@@ -47,7 +56,7 @@ const NavigationBar = () => {
                 <div className='nav__account'>
                     {/* Todo : Make Sure Name is not greater than 9 letters. */}
                     {/* Todo : Make Sure that name only appear when user is logged-in */}
-                    <div className='nav__account_users-name'>Hello Bro</div>
+                    {!isMenuOpen && <div className='nav__account_users-name'>Hello Bro</div>}
                     <FiShoppingCart style={{ height: "20px", width: "20px" }} />
                     <div className='nav__account_cart-count'>9</div>
                     {/* Todo : add If the count exceed 9 then need to show +9 only */}

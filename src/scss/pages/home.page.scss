@@ -1,25 +1,40 @@
-.home{
+.home {
     padding: 10px;
     @include flexCenter();
     flex-direction: column;
 
-    &__category{
+    &__category {
         width: 100%;
         overflow: hidden;
-        height: 100px;
+        height: 80px;
 
-        &__swiper{
-           width: 100%;
-           height: 100%;
+        &__swiper {
+            width: 100%;
+            height: 100%;
         }
 
-        &__slide{
+        &__slide {
             background-color: red;
             border-radius: 50%;
-            width: 100px !important;
+            width: 80px !important;
             display: flex !important;
             align-items: center !important;
             justify-content: center !important;
+            position: relative;
+
+            .label{
+                position: absolute;
+                bottom: 0px;
+                left: 0px;
+            }
+
+            img {
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 50%;
+            }
         }
     }
 }
