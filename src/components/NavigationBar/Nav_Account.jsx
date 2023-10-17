@@ -3,7 +3,7 @@ import { FiShoppingCart } from "react-icons/fi";
 import { Random_User_Image } from '../../assets';
 
 const Nav_Account = () => {
-    const [toggleAccounts, setToggleAccounts] = React.useState(false)
+    const [toggleAccounts, setToggleAccounts] = React.useState()
     const menuRef = React.useRef();
 
     const toggleOpenCloseAccount = () => {
