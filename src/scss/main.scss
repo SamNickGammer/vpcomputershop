@@ -11,5 +11,7 @@
 
 @import "components/navigationBar.main";
 
-@import "pages/home.page"
+@import "pages/home.page";
 
+// Import Main from admin
+@import "../Admin/scss/main.scss"

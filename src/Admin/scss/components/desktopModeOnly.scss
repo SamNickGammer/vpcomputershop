@@ -1,0 +1,50 @@
+.dmo {
+    @include flexSpaceBetween();
+    width: 100vw;
+    height: 100vh;
+    color: $color-white;
+    background-color: $color-black;
+    flex-direction: column;
+    animation: all 200ms ease-in-out;
+    padding: 35px;
+
+    &__lgo {
+        @include flexCenter();
+        flex-direction: column;
+
+        img {
+            width: 15em;
+        }
+    }
+
+    &__mwm {
+        @include flexCenter();
+        flex-direction: column;
+
+
+        &-lpi {
+            padding-bottom: 10px;
+            width: 35em;
+        }
+
+        &-title {
+            font-weight: bold;
+            font-size: 1.8em;
+        }
+    }
+
+    &__fot {
+        @include flexCenter();
+        flex-direction: column;
+
+        :first-child {
+            padding-bottom: 2px;
+        }
+
+        :last-child {
+            padding-top: 2px;
+            border-top: 1px solid $color-light-white;
+        }
+    }
+
+}
