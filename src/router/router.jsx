@@ -4,6 +4,7 @@ import ErrorPage from "./ErrorPage"
 import AppLayout from "../layout/AppLayout"
 import AdminLayout from "../Admin/layout/AdminLayout"
 import Dashboard from "../Admin/pages/Dashboard"
+import AdminLogin from "../Admin/pages/AdminLogin"
 
 const router = createBrowserRouter([
     {
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
             {
                 path : "",
                 element : <Dashboard/>
+            },
+            {
+                path : 'login',
+                element : <AdminLogin/>
             }
         ]
     }

@@ -1,11 +1,12 @@
 import React from 'react'
-import { useSelector, useDispatch } from 'react-redux'
+import {  useDispatch } from 'react-redux'
 import { Outlet } from 'react-router-dom'
 import { updateScreen } from '../../redux/reducer/screenSize/screenSizeSlice'
-import DesktopModeOnly from '../components/DesktopModeOnly'
+import { Toaster } from 'react-hot-toast'
+// import DesktopModeOnly from '../components/DesktopModeOnly'
 
 const AdminLayout = () => {
-  const screenSize = useSelector((state) => state.screen)
+  // const screenSize = useSelector((state) => state.screen)
   const dispatch = useDispatch();
 
   window.addEventListener('resize', () => {
@@ -17,11 +18,13 @@ const AdminLayout = () => {
 
   return (
     <>
-      {screenSize.width < 999 ? (
+      {/* {screenSize.width < 999 ? (
         <DesktopModeOnly />
       ) : (
         <Outlet />
-      )}
+      )} */}
+      <Toaster position='top-right'/>
+      <Outlet/>
     </>
   )
 }

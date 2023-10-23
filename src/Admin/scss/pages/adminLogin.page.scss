@@ -1,0 +1,31 @@
+// .adm{
+//     height: 100vh;
+//     width: 100vw;
+//     background: rgb(0,0,0);
+//     background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(122,122,122,1) 53%, rgba(196,196,196,1) 79%, rgba(255,255,255,1) 100%);
+//     color: $color-white;
+//     display: flex;
+//     align-items: center;
+//     padding: 50px;
+//     position: relative;
+
+//     .wlc {
+//         font-size: 12rem;
+//         font-weight: bolder;
+//         user-select: none;
+//     }
+    
+//     .cnt{
+//         @include flexCenter();
+//         position: absolute;
+//         top: 50%;
+//         right: 100px;
+//         transform: translate(0,-50%);
+//         height: 55rem;
+//         width: 45rem;
+//         border-radius: 15px;
+//         // backdrop-filter: blur( 13px );
+//         // -webkit-backdrop-filter: blur( 13px );
+//         // border-radius: 10px;
+//     }
+// }
